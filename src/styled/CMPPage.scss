@@ -1,0 +1,159 @@
+.table-main {
+  width: calc(100% - 210px);
+  font-family: 'Roboto';
+  background: #202124;
+
+  .h1-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    position: relative;
+    margin: 11px 0 12px 15px;
+  }
+
+  .table-info,
+  .table-info-title {
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 21px 0 21px 10px;
+    position: relative;
+
+    .table-level {
+      position: relative;
+      flex: 120;
+      display: flex;
+      align-items: center;
+      height: 16px;
+      margin-left: 12px;
+    }
+    .table-level-container0,
+    .table-level-container1,
+    .table-level-container2,
+    .table-level-container3,
+    .table-level-container4 {
+      width: 55px;
+      height: 28px;
+      background: #414144;
+      border-radius: 6px;
+      padding: 3px 7px;
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      margin-left: -7px;
+    }
+    .table-level-container1 {
+      margin-left: 9px;
+    }
+    .table-level-container2 {
+      margin-left: 25px;
+    }
+    .table-level-container3 {
+      margin-left: 41px;
+    }
+    .table-level-container4 {
+      margin-left: 57px;
+    }
+
+    .table-img1 {
+      height: 16px;
+      margin-left: 16px;
+    }
+    .table-img2 {
+      height: 16px;
+      margin-left: 32px;
+    }
+    .table-img3 {
+      height: 16px;
+      margin-left: 48px;
+    }
+    .table-img4 {
+      height: 16px;
+      margin-left: 64px;
+    }
+    .table-img5 {
+      height: 16px;
+      margin-left: 80px;
+    }
+    .table-img6 {
+      height: 16px;
+      margin-left: 96px;
+    }
+    .table-img0 {
+      height: 16px;
+      display: block;
+      z-index: 3;
+    }
+    .table-namework {
+      flex: 650;
+    }
+    .table-3,
+    .table-4,
+    .table-5,
+    .table-6,
+    .table-7 {
+      flex: 176 + 24px;
+    }
+  }
+
+  .table-info-title {
+    color: #a1a1aa;
+    padding: 11px 0 11px 12px;
+  }
+  .table-info {
+    padding: 21px 0 21px 12px;
+  }
+  .table-info:has(.input) {
+    padding: 12px 0 12px 12px;
+  }
+
+  .table-info:after,
+  .table-info-title:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 10px;
+    width: calc(100% - 20px);
+    border-bottom: 1px solid #414144;
+  }
+
+  .table-info_active {
+    padding: 12px;
+  }
+
+  .input {
+    border: 1px solid #414144;
+    border-radius: 6px;
+    background: #202124;
+    letter-spacing: 0.1px;
+    color: #71717a;
+    padding: 10px;
+  }
+
+  .loading {
+    font-size: 24px;
+    line-height: 130%;
+    color: white;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .error {
+    font-size: 24px;
+    line-height: 130%;
+    color: red;
+    display: flex;
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+  }
+}

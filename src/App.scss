@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import-normalize;
+@import '~bootstrap/scss/bootstrap';
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #27272a;
+}
+
+.app {
+  display: flex;
+  flex-wrap: nowrap;
+
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1896px;
+  padding: 0 0 0 24px;
+}
+
+.bs-popover-bottom {
+  width: 400px;
+}
+
+.btn-secondary {
+  margin-right: 16px;
+}
