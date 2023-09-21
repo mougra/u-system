@@ -9,7 +9,22 @@ import {
   Row,
 } from 'react-bootstrap'
 
-function Sort(isSorted: any) {
+interface FilterProps {
+  filterPC: string
+  setFilterPC(filterPC: string): void
+  filterTag: string
+  setFilterTag(filterTag: string): void
+}
+
+function Filter({
+  filterPC,
+  setFilterPC,
+  filterTag,
+  setFilterTag,
+}: FilterProps) {
+  const [filterPClocal, setFilterPClocal] = useState('')
+  const [filterTaglocal, setFilterTaglocal] = useState('')
+
   const [show, setShow] = useState(false)
   const [target, setTarget] = useState(null)
   const ref = useRef(null)
@@ -19,36 +34,20 @@ function Sort(isSorted: any) {
     setTarget(event.target)
   }
 
-  const handleClose = () => setShow(false)
-  const handleShow = () => setShow(true)
-
-  function ChangeTypePC(e: any) {
-    console.log('typepc', e.target.value)
+  const handleSave = () => {
+    setShow(false)
+    setFilterPC(filterPClocal)
+    setFilterTag(filterTaglocal)
   }
+  const handleReset = () => {
+    setShow(false)
+    setFilterPC('')
+    setFilterTag('')
+  }
+  const handleShow = () => setShow(true)
 
   return (
     <>
-      {/* <Dropdown>
-        <Dropdown.Toggle variant='success' id='dropdown-basic'>
-          Filter
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <span>Фильтры</span>
-          <Form.Select aria-label='Default select example'>
-            <option>Тип ПК</option>
-            <option value='1'>One</option>
-            <option value='2'>Two</option>
-            <option value='3'>Three</option>
-          </Form.Select>
-          <Form.Select aria-label='Default select example'>
-            <option>Open this select menu</option>
-            <option value='1'>One</option>
-            <option value='2'>Two</option>
-            <option value='3'>Three</option>
-          </Form.Select>
-        </Dropdown.Menu>
-      </Dropdown> */}
       <div ref={ref}>
         <Button onClick={handleClick}>Filter</Button>
 
@@ -73,9 +72,9 @@ function Sort(isSorted: any) {
               <Form.Select
                 className='mt-2 mb-2'
                 aria-label='Default select example'
-                onChange={(e) => ChangeTypePC(e)}
+                onChange={(e) => setFilterPClocal(e.target.value)}
               >
-                <option>Выбрать</option>
+                <option>{filterPC ? filterPC : 'Выбрать'}</option>
                 <option value='default'>Default</option>
                 <option value='vm_host'>vm_host</option>
                 <option value='vm_guest'>vm_guest</option>
@@ -84,22 +83,23 @@ function Sort(isSorted: any) {
               <Form.Select
                 className='mt-2 mb-4'
                 aria-label='Default select example'
+                onChange={(e) => setFilterTaglocal(e.target.value)}
               >
-                <option>Выбрать</option>
-                <option className='text-danger' value='1'>
+                <option>{filterTag ? filterTag : 'Выбрать'}</option>
+                <option className='text-danger' value='red tag'>
                   Red tag
                 </option>
-                <option className='text-success' value='2'>
+                <option className='text-success' value='green tag'>
                   Green tag
                 </option>
-                <option className='text-warning' value='3'>
+                <option className='text-warning' value='yellow tag'>
                   Yellow tag
                 </option>
               </Form.Select>
-              <Button variant='secondary' onClick={handleClose}>
+              <Button variant='secondary' onClick={handleReset}>
                 Сбросить
               </Button>
-              <Button variant='primary' onClick={handleClose}>
+              <Button variant='primary' onClick={handleSave}>
                 Применить
               </Button>
             </Popover.Body>
@@ -110,4 +110,4 @@ function Sort(isSorted: any) {
   )
 }
 
-export default Sort
+export default Filter

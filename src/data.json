@@ -2,7 +2,7 @@
   {
     "id": 1,
     "status": "qweqwe",
-    "type": "1",
+    "type": "vm_guest",
     "location": "qwe",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -12,7 +12,7 @@
   {
     "id": 2,
     "status": "asdfs",
-    "type": "2",
+    "type": "vm_guest",
     "location": "wer",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -22,7 +22,7 @@
   {
     "id": 3,
     "status": "casdh",
-    "type": "3",
+    "type": "default",
     "location": "asd",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -32,7 +32,7 @@
   {
     "id": 4,
     "status": "bcvsgh",
-    "type": "4",
+    "type": "default",
     "location": "czxc",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -42,7 +42,7 @@
   {
     "id": 5,
     "status": "dge",
-    "type": "5",
+    "type": "vm_guest",
     "location": "",
     "tags": "green tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -51,8 +51,8 @@
   },
   {
     "id": 6,
-    "status": "gjgy",
-    "type": "6",
+    "status": "asdasd",
+    "type": "vm_guest",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -62,7 +62,7 @@
   {
     "id": 7,
     "status": "fsdhr",
-    "type": "7",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -72,7 +72,7 @@
   {
     "id": 8,
     "status": "true",
-    "type": "8",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -82,7 +82,7 @@
   {
     "id": 9,
     "status": "true",
-    "type": "9",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -92,7 +92,7 @@
   {
     "id": 10,
     "status": "true",
-    "type": "10",
+    "type": "vm_guest",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -102,7 +102,7 @@
   {
     "id": 11,
     "status": "true",
-    "type": "11",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -112,7 +112,7 @@
   {
     "id": 12,
     "status": "true",
-    "type": "12",
+    "type": "vm_guest",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -122,7 +122,7 @@
   {
     "id": 13,
     "status": "true",
-    "type": "13",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -132,7 +132,7 @@
   {
     "id": 14,
     "status": "true",
-    "type": "14",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -142,7 +142,7 @@
   {
     "id": 15,
     "status": "true",
-    "type": "15",
+    "type": "vm_guest",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -152,7 +152,7 @@
   {
     "id": 16,
     "status": "true",
-    "type": "16",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -162,7 +162,7 @@
   {
     "id": 17,
     "status": "true",
-    "type": "17",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -172,7 +172,7 @@
   {
     "id": 18,
     "status": "true",
-    "type": "18",
+    "type": "default",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -182,7 +182,7 @@
   {
     "id": 19,
     "status": "true",
-    "type": "19",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "status": "true",
-    "type": "20",
+    "type": "default",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "status": "true",
-    "type": "21",
+    "type": "vm_host",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "status": "true",
-    "type": "22",
+    "type": "default",
     "location": "hgfh",
     "tags": "red tag",
     "dateCreate": "2023-08-30 16:56:40",
