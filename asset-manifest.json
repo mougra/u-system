@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/u-system/static/css/main.455f1b8d.css",
-    "main.js": "/u-system/static/js/main.7f2d8f36.js",
+    "main.js": "/u-system/static/js/main.d31552b0.js",
     "static/media/levelDeletesvg.svg": "/u-system/static/media/levelDeletesvg.b3ca53b270e56de9c2c5e791ea1c3adb.svg",
     "index.html": "/u-system/index.html",
     "static/media/levelDoc.svg": "/u-system/static/media/levelDoc.a21ea7ff0444df818c7230e3d28c30d9.svg",
@@ -9,10 +9,10 @@
     "static/media/mainApp.svg": "/u-system/static/media/mainApp.f030d7aef5679410928d97a813b8fd64.svg",
     "static/media/backArrow.svg": "/u-system/static/media/backArrow.00e64b747014f3d4ce0389c0a826f1b7.svg",
     "main.455f1b8d.css.map": "/u-system/static/css/main.455f1b8d.css.map",
-    "main.7f2d8f36.js.map": "/u-system/static/js/main.7f2d8f36.js.map"
+    "main.d31552b0.js.map": "/u-system/static/js/main.d31552b0.js.map"
   },
   "entrypoints": [
     "static/css/main.455f1b8d.css",
-    "static/js/main.7f2d8f36.js"
+    "static/js/main.d31552b0.js"
   ]
 }
