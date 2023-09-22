@@ -19,9 +19,15 @@ function Graph() {
   const filterPCValue = searchParams.get('endpoint_type')
   const filterTagValue = searchParams.get('endpoint_tag')
 
-  const { error, loading, rows, searchRows } = useAppSelector(
-    (state) => state.data
-  )
+  const {
+    error,
+    loading,
+    rows,
+    searchRows,
+    search_val,
+    endpoint_tag,
+    endpoint_type,
+  } = useAppSelector((state) => state.data)
   const [isEditMode, setIsEditMode] = useState(false)
   const [isOpenMode, setIsOpenMode] = useState(true)
   const [rowIDToEdit, setRowIDToEdit] = useState<number>(0)
@@ -86,13 +92,14 @@ function Graph() {
     setPage(page)
   }
 
-  let pageTotal = debounced
-    ? searchRows
-      ? searchRows.length / 9
+  let pageTotal =
+    debounced || endpoint_tag || endpoint_type
+      ? searchRows
+        ? searchRows.length / 9
+        : 1
+      : rows
+      ? rows.length / 9
       : 1
-    : rows
-    ? rows.length / 9
-    : 1
 
   return (
     <>
@@ -133,6 +140,8 @@ function Graph() {
         {!error && !loading && (
           <div>
             {!debounced &&
+              !filterPC &&
+              !filterTag &&
               rows &&
               rows
                 .slice((page - 1) * 9, page * 9)
@@ -150,7 +159,7 @@ function Graph() {
                     handleAddRow={handleAddRow}
                   />
                 ))}
-            {debounced &&
+            {(debounced || filterPC || filterTag) &&
               searchRows.length >= 1 &&
               searchRows
                 .slice((page - 1) * 9, page * 9)
