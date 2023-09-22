@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/u-system/cmdb/static/css/main.455f1b8d.css",
+    "main.js": "/u-system/cmdb/static/js/main.d9f48f6b.js",
+    "static/media/levelDeletesvg.svg": "/u-system/cmdb/static/media/levelDeletesvg.b3ca53b270e56de9c2c5e791ea1c3adb.svg",
+    "index.html": "/u-system/cmdb/index.html",
+    "static/media/levelDoc.svg": "/u-system/cmdb/static/media/levelDoc.a21ea7ff0444df818c7230e3d28c30d9.svg",
+    "static/media/projectList.svg": "/u-system/cmdb/static/media/projectList.0010a223c8e852677cce8ad46ec51021.svg",
+    "static/media/mainApp.svg": "/u-system/cmdb/static/media/mainApp.f030d7aef5679410928d97a813b8fd64.svg",
+    "static/media/backArrow.svg": "/u-system/cmdb/static/media/backArrow.00e64b747014f3d4ce0389c0a826f1b7.svg",
+    "main.455f1b8d.css.map": "/u-system/cmdb/static/css/main.455f1b8d.css.map",
+    "main.d9f48f6b.js.map": "/u-system/cmdb/static/js/main.d9f48f6b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.455f1b8d.css",
+    "static/js/main.d9f48f6b.js"
+  ]
+}
