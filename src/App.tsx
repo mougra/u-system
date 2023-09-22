@@ -16,6 +16,7 @@ function App() {
         <Aside />
         <Routes>
           <Route path='/u-system/:url' element={<Graph />} />
+          <Route path='/u-system' element={<Graph />} />
           <Route path='/other' element={<Other />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

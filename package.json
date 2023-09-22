@@ -1,7 +1,7 @@
 {
   "name": "u-system",
   "version": "0.1.0",
-  "homepage": "https://mougra/u-system/cmdb",
+  "homepage": "https://mougra/u-system",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
